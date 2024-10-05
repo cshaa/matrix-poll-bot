@@ -1,0 +1,12 @@
+[package]
+name = "matrix-poll-bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.89"
+dotenv = "0.15.0"
+matrix-sdk = "0.7.1"
+matrix-sdk-ui = "0.7.0"
+ruma = { version = "0.10.1", features = ["unstable-msc3381"] }
+tokio = { version = "1.40.0", features = ["rt", "rt-multi-thread", "macros"] }
