@@ -106,7 +106,7 @@ async fn main() -> anyhow::Result<()> {
 fn handle_poll_start(ev: OriginalSyncMessageLikeEvent<UnstablePollStartEventContent>) {
     let content = ev.content.poll_start();
     println!(
-        "Started a poll \"{}\" ({}) with by {}:",
+        "Started a poll \"{}\" ({}) by {}:",
         content.question.text, ev.event_id, ev.sender,
     );
     for answer in content.answers.iter() {
